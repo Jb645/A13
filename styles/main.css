@@ -43,14 +43,11 @@ header h3{
 	text-shadow:0 .05em #800000;
 }
 /*rule set for navigation */
-#nav_menu{
-	position: relative;
-}
 ul#nav_menu {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-
+	position: relative;
 }
 ul#nav_menu li{
 	float: left;
@@ -73,8 +70,24 @@ ul#nav_menu li a.current{
 ul#nav_menu ul{
 	display: none;
 	position: absolute;
+	list-style-type: none;
 	top: 100%;
+	width: 100%;
+
 }
+
+ul#nav_menu ul li{
+	float: none;
+}
+ul#nav_menu li:hover > ul{
+	 display: block;
+}
+ul#nav_menu >ul::after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
 /* the styles for the Main section */
 main {
 	clear: left;
