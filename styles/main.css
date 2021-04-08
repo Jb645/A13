@@ -42,51 +42,7 @@ header h3{
 .shadow{
 	text-shadow:0 .05em #800000;
 }
-/*rule set for navigation */
-ul#nav_menu {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	position: relative;
-}
-ul#nav_menu li{
-	float: left;
-	width:20%;
-}
-ul#nav_menu li a{
-	display: block;
-	text-align: center;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	text-decoration: none;
-	background: #800000;
-	color: white;
-	font-weight: bold;
-}
-ul#nav_menu li a.current{
-	color: yellow;
-}
 
-ul#nav_menu ul{
-	display: none;
-	position: absolute;
-	list-style-type: none;
-	top: 100%;
-	width: 100%;
-
-}
-
-ul#nav_menu ul li{
-	float: none;
-}
-ul#nav_menu li:hover > ul{
-	 display: block;
-}
-ul#nav_menu >ul::after{
-	content: "";
-	clear: both;
-	display: block;
-}
 
 /* the styles for the Main section */
 main {
@@ -199,4 +155,47 @@ footer p{
 	padding: 1em 0;
 }
 
-
+/*rule set for navigation */
+nav {
+	width: 100%;
+}
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+	width: 20%;
+}
+#nav_menu ul li a {
+	display: block;
+	/*width: 160px;*/
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+#nav_menu a.current {
+	color: yellow;
+}
+#nav_menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
