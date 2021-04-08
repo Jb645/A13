@@ -11,8 +11,8 @@ html{
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-	width:800px;
-	margin:0 auto;
+	width: 800px;
+	margin: 0 auto;
 	border: 3px solid #931420;
 	background-color: #fffded;
 }
@@ -42,10 +42,44 @@ header h3{
 .shadow{
 	text-shadow:0 .05em #800000;
 }
+/*rule set for navigation */
+#nav_menu{
+	position: relative;
+}
+ul#nav_menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+}
+ul#nav_menu li{
+	float: left;
+	width:20%;
+}
+ul#nav_menu li a{
+	display: block;
+	text-align: center;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-decoration: none;
+	background: #800000;
+	color: white;
+	font-weight: bold;
+}
+ul#nav_menu li a.current{
+	color: yellow;
+}
+
+ul#nav_menu ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
 /* the styles for the Main section */
 main {
 	clear: left;
 }
+
 
 
 /* the styles for the section*/
@@ -148,7 +182,8 @@ footer{
 }
 footer p{
 	text-align: center;
-	color: white;
+	color: #ffffff;
 	padding: 1em 0;
 }
+
 
