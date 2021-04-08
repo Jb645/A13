@@ -49,7 +49,9 @@ main {
 	clear: left;
 }
 
-
+main ul{
+	list-style-type: circle;
+}
 
 /* the styles for the section*/
 section{
